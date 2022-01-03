@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style.css"> 
+    <title>Gyros rendelés</title>
+</head>
+<body>
+    <h1>Gyros rendelés</h1>
+    <div id="gyrosformdoboz">
+    <form id="gyrosform">
+        <label>Írja be a nevét: <input type="text" name="nev" ></label><br>
+        <label>Írja be a Telefonszámát:<input type="number" name="telefonszam" ></label><br>
+        <label>Írja be a címét: <input type="text" name="cim" ></label><br><br>
+
+
+        <label>Válassza ki az adag méretét: </label><br>
+            <label>Kis adag: <input type="checkbox" id="adag" > Gomb megnyomásával nagy adagot válassza ki</label><br><br>
+
+        <label>Válassza ki a gyros típusát: <select name="tipus">
+            <option value="tal">Tál</option>
+            <option value="kifli">Kifli</option>
+        </select></label><br>
+
+
+        <label>Válassza ki milyen mártást szeretne:<select name="martas">
+            <option value="csipos">Csípős</option>
+            <option value="sima">Sima</option>
+        </select></label><br>
+
+
+        <button type="submit" class="btn btn-outline-danger">Új gyros felvétele</button>
+    </form>
+    <button id="eddigigyros" class="btn btn-primary">Az eddig felvett gyrosok listája</button>  
+    </div>
+    <div id="gyrosmut"></div>
+    <script src="gyros.js"></script>
+</body>
+</html>
